@@ -2,17 +2,19 @@
 
 #  Objetivo do Projeto
 
+## Objetivo do Projeto
+
 Criar um site para a Outlet, contendo:
 
-- Página inicial com botões para categorias e produtos em destaque  
-- Página de listagem de produtos  
-- Página individual do produto  
-- Página de feedbacks  
-- Página de login  
-- Página de cadastro  
+- Página inicial com botões para categorias e produtos em destaque
+- Página de listagem de produtos
+- Página individual do produto
+- Página de feedbacks
+- Página de login
+- Página de cadastro
 - Carrinho lateral no formato offcanvas
 
-O layout segue o estilo preto e branco, exatamente como o wireframe.
+O layout segue o estilo preto e branco, com foco em organização, simplicidade e clareza.
 
 ---
 
@@ -161,5 +163,6 @@ Qualquer alteração ou parte nova pode ser feita sem prejudicar a estrutura, po
 ✔ O código está comentado  
 ✔ Classes estão em português  
 ✔ Todos os arquivos estão organizados  
+
 
 
