@@ -1,6 +1,6 @@
 ---
 
-# 🎯 Objetivo do Projeto
+#  Objetivo do Projeto
 
 Criar um site para a Outlet, contendo:
 
@@ -10,9 +10,9 @@ Criar um site para a Outlet, contendo:
 - Página de feedbacks  
 - Página de login  
 - Página de cadastro  
-- Carrinho lateral no formato **offcanvas**
+- Carrinho lateral no formato *offcanvas*
 
-O layout segue o estilo **preto e branco**, exatamente como o wireframe.
+O layout segue o estilo *preto e branco*, exatamente como o wireframe.
 
 ---
 
@@ -161,3 +161,4 @@ Qualquer alteração ou parte nova pode ser feita sem prejudicar a estrutura, po
 ✔ O código está comentado  
 ✔ Classes estão em português  
 ✔ Todos os arquivos estão organizados  
+
