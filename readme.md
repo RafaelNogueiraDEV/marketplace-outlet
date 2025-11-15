@@ -1,4 +1,3 @@
-
 ---
 
 # 🎯 Objetivo do Projeto
@@ -154,3 +153,11 @@ Tudo já estruturado no arquivo **script.js**.
 - Testar visual geral  
 
 ---
+
+# 📞 Dúvidas do Grupo?
+
+Qualquer alteração ou parte nova pode ser feita sem prejudicar a estrutura, pois:
+
+✔ O código está comentado  
+✔ Classes estão em português  
+✔ Todos os arquivos estão organizados  
