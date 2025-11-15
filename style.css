@@ -1,0 +1,127 @@
+/* ========================================================= */
+/* =============== ARQUIVO CSS BASE DO PROJETO ============== */
+/* =============== Comentários para orientação =============== */
+/* ========================================================= */
+
+/* --------------------------------------------------------- */
+/* 1) ESTILOS GLOBAIS DO SITE                                */
+/* --------------------------------------------------------- */
+
+/* Fonte geral, reset, padrões de cor, etc */
+body {
+    /* definir fonte padrão aqui */
+}
+
+.texto-menu {
+    /* estilo dos textos dos menus superiores */
+}
+
+.marca {
+    /* estilo da marca OUTLET YUANA RAMIREZ */
+}
+
+/* --------------------------------------------------------- */
+/* 2) CABEÇALHO / HEADER                                     */
+/* --------------------------------------------------------- */
+
+.cabecalho-site {
+    /* estilo geral do header */
+}
+
+.menu-principal a {
+    /* estilo do menu da parte esquerda */
+}
+
+.acoes-usuario a {
+    /* estilo dos links do lado direito (login, cadastro) */
+}
+
+.barra-pesquisa {
+    /* estilo da barra de pesquisa */
+}
+
+/* --------------------------------------------------------- */
+/* 3) HOME (index.html) – CATEGORIAS E PRODUTOS EM DESTAQUE  */
+/* --------------------------------------------------------- */
+
+.bloco-categorias {
+    /* container dos botões de categoria */
+}
+
+.botao-categoria {
+    /* botão individual de categoria */
+}
+
+.card-produto {
+    /* estilo geral de cada card de produto */
+}
+
+/* --------------------------------------------------------- */
+/* 4) LISTAGEM DE PRODUTOS (produtos.html)                   */
+/* --------------------------------------------------------- */
+
+.grid-produtos {
+    /* estilização da grade de produtos */
+}
+
+/* --------------------------------------------------------- */
+/* 5) PÁGINA INDIVIDUAL DO PRODUTO (produto.html)            */
+/* --------------------------------------------------------- */
+
+.imagem-produto-grande {
+    /* área onde a imagem grande ficará */
+}
+
+.nome-produto {
+    /* estilo do título do produto */
+}
+
+.texto-descricao {
+    /* descrição longa do produto */
+}
+
+/* --------------------------------------------------------- */
+/* 6) FEEDBACKS (feedbacks.html)                             */
+/* --------------------------------------------------------- */
+
+.sombra-feedback {
+    /* sombra e borda dos cards de feedback */
+}
+
+/* --------------------------------------------------------- */
+/* 7) LOGIN E CADASTRO (login.html / cadastro.html)          */
+/* --------------------------------------------------------- */
+
+.sombra-card {
+    /* caixa do formulário */
+}
+
+.texto-login {
+    /* título do card de login/cadastro */
+}
+
+/* --------------------------------------------------------- */
+/* 8) CARRINHO OFFCANVAS                                     */
+/* --------------------------------------------------------- */
+
+.itens-carrinho {
+    /* área onde itens adicionados serão listados no JS */
+}
+
+/* --------------------------------------------------------- */
+/* 9) RESPONSIVIDADE                                         */
+/* --------------------------------------------------------- */
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+
+    /* ajustes do header no mobile */
+
+    .menu-principal {
+        /* reorganizar itens se necessário */
+    }
+
+    .barra-pesquisa {
+        width: 80% !important;
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlet Yuana Ramirez - Produtos</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!-- ==================== CABEÇALHO ========================== -->
+    <!-- ========================================================= -->
+
+<header class="cabecalho-site border-bottom pb-3">
+
+    <!-- ==================== LINHA SUPERIOR ==================== -->
+    <div class="container d-flex justify-content-between align-items-center pt-3">
+
+        <!-- Menu principal (lado esquerdo) -->
+        <nav class="menu-principal d-flex gap-4">
+            <a href="index.html" class="texto-menu">Início</a>
+            <a href="produtos.html" class="texto-menu">Produtos</a>
+            <a href="feedbacks.html" class="texto-menu">Feedbacks</a>
+        </nav>
+
+        <!-- Marca central -->
+        <h1 class="marca fw-bold text-center flex-grow-1 m-0">
+            OUTLET YUANA RAMIREZ
+        </h1>
+
+        <!-- Ações do usuário + Carrinho (lado direito) -->
+        <div class="acoes-usuario d-flex align-items-center gap-3">
+
+            <a href="login.html" class="texto-menu">Acessar perfil</a>
+            <a href="cadastro.html" class="texto-menu">Cadastrar-se</a>
+
+            <!-- Ícone do carrinho (Bootstrap Icon) -->
+            <button class="btn p-0" data-bs-toggle="offcanvas" data-bs-target="#carrinhoOffcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" 
+                    class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 
+                    .485.379L2.89 5H14.5a.5.5 0 0 1 
+                    .491.592l-1.5 8A.5.5 0 0 1 
+                    13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 
+                    0 0 1-.5-.5zM3.102 6l1.313 
+                    7h8.17l1.313-7H3.102zM5 16a1 1 0 1 1 
+                    2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 
+                    2 0 1 1 0 0 1-2 0z"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- ==================== LINHA INFERIOR ==================== -->
+    <div class="container mt-3 d-flex justify-content-center">
+        <input type="text" class="barra-pesquisa form-control w-50" placeholder="Buscar produtos...">
+    </div>
+
+</header>
+
+    <!-- Linha separadora -->
+    <hr class="mt-4">
+
+    <!-- ========================================================= -->
+    <!-- ======================= CONTEÚDO ========================== -->
+    <!-- ========================================================= -->
+
+    <div class="container mt-4 mb-5">
+
+        <div class="row">
+
+            <!-- ================================================= -->
+            <!-- ================= COLUNA ESQUERDA ================ -->
+            <!-- ================================================= -->
+
+            <aside class="col-md-3">
+
+                <!-- Título dos filtros -->
+                <h3 class="titulo-secao mb-3">Filtros</h3>
+
+                <!-- Filtro por categoria -->
+                <div class="filtro-categoria mb-4">
+                    <h5 class="titulo-filtro">Categoria</h5>
+
+                    <!-- Opções conforme wireframe -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="conjuntos">
+                        <label class="form-check-label">Conjuntos</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="tops">
+                        <label class="form-check-label">Tops</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="vestidos">
+                        <label class="form-check-label">Vestidos</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="calcas">
+                        <label class="form-check-label">Calças</label>
+                    </div>
+                </div>
+
+                <!-- Filtro por tamanho -->
+                <div class="filtros-tamanho mb-4">
+                    <h5 class="titulo-filtro">Tamanho</h5>
+
+                    <div class="form-check"><input class="form-check-input" type="checkbox"><label class="form-check-label">PP</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox"><label class="form-check-label">P</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox"><label class="form-check-label">M</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox"><label class="form-check-label">G</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox"><label class="form-check-label">GG</label></div>
+                </div>
+
+                <!-- Filtro por preço -->
+                <div class="filtro-preco mb-4">
+                    <h5 class="titulo-filtro">Preço</h5>
+
+                    <input type="range" class="form-range">
+                    <p class="valor-preco mt-2">Até: <strong>R$ 300,00</strong></p>
+                </div>
+
+                <!-- Botão aplicar filtros -->
+                <button class="btn btn-dark w-100">Aplicar Filtros</button>
+
+            </aside>
+
+            <!-- ================================================= -->
+            <!-- ================= COLUNA DIREITA ================= -->
+            <!-- ================================================= -->
+
+            <main class="col-md-9">
+
+                <!-- Título da seção -->
+                <h2 class="titulo-secao mb-4 text-center">Lista de Produtos</h2>
+
+                <div class="row">
+
+                    <!-- Cada produto segue a estrutura abaixo -->
+
+                    <!-- PRODUTO 1 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card produto-card">
+                            <div class="imagem-produto bg-light" style="height: 250px;"></div>
+                            <div class="card-body text-center">
+                                <h5 class="nome-produto">Nome do Produto</h5>
+                                <p class="avaliacao-produto">★★★★★</p>
+                                <p class="preco-produto">R$ 99,90</p>
+                                <a href="produto.html" class="btn btn-dark w-100">Ver Produto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 2 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card produto-card">
+                            <div class="imagem-produto bg-light" style="height: 250px;"></div>
+                            <div class="card-body text-center">
+                                <h5 class="nome-produto">Nome do Produto</h5>
+                                <p class="avaliacao-produto">★★★★☆</p>
+                                <p class="preco-produto">R$ 119,90</p>
+                                <a href="produto.html" class="btn btn-dark w-100">Ver Produto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 3 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card produto-card">
+                            <div class="imagem-produto bg-light" style="height: 250px;"></div>
+                            <div class="card-body text-center">
+                                <h5 class="nome-produto">Nome do Produto</h5>
+                                <p class="avaliacao-produto">★★★☆☆</p>
+                                <p class="preco-produto">R$ 79,90</p>
+                                <a href="produto.html" class="btn btn-dark w-100">Ver Produto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Você pode duplicar esta estrutura para mais produtos -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- ================= CARRINHO OFFCANVAS ==================== -->
+    <!-- ========================================================= -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Carrinho de Compras</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <div class="itens-carrinho">
+                <!-- Conteúdo será preenchido futuramente pelo JS -->
+            </div>
+
+            <hr>
+
+            <p class="fw-bold">Total: R$ 0,00</p>
+
+            <button class="btn btn-dark w-100">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- ======================== RODAPÉ ========================== -->
+    <!-- ========================================================= -->
+
+    <footer class="rodape bg-light py-4">
+        <div class="container text-center">
+            <p class="m-0">&copy; 2025 Outlet Yuana Ramirez — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS externo -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
