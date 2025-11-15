@@ -1,8 +1,4 @@
----
-
-#  Objetivo do Projeto
-
-## Objetivo do Projeto
+# 🎯 Objetivo do Projeto
 
 Criar um site para a Outlet, contendo:
 
@@ -16,55 +12,54 @@ Criar um site para a Outlet, contendo:
 
 O layout segue o estilo preto e branco, com foco em organização, simplicidade e clareza.
 
+---
 
 # 🧱 Estrutura do Código
 
 ## 1) HTML  
 Todos os arquivos HTML contém:
 
-✔ Header padronizado seguindo fielmente o wireframe  
+✔ Header padronizado  
 ✔ Barra de pesquisa  
 ✔ Menu principal  
 ✔ Carrinho lateral (offcanvas)  
-✔ Conteúdo de cada página  
-✔ Comentários em português, explicando cada bloco  
-
-O objetivo é permitir que qualquer membro do grupo entenda rapidamente o que cada parte faz.
+✔ Conteúdo específico de cada página  
+✔ Comentários em português para facilitar o entendimento
 
 ---
 
 ## 2) CSS (style.css)
 
-O arquivo já está estruturado e comentado:
+Arquivo preparado e comentado, separado em seções:
 
 - Estilização global  
-- Header  
+- Cabeçalho  
 - Barra de pesquisa  
-- Cards de produtos  
-- Seções da Home  
-- Páginas específicas (produtos, produto individual, feedbacks, login e cadastro)  
+- Cartões de produtos  
+- Home  
+- Produtos  
+- Produto individual  
+- Feedbacks  
+- Login e cadastro  
 - Carrinho offcanvas  
 - Responsividade  
 
-Os comentários indicam onde os estilos devem ser adicionados.
-
-📌 **Importante:** nenhuma estilização foi aplicada ainda.  
-O arquivo está preparado apenas com a estrutura-base para facilitar o trabalho. Pode ficar a vontade para alterar o que for necessário!
+Nenhuma estilização visual foi aplicada ainda.  
+O arquivo está pronto para o responsável pelo CSS trabalhar livremente.
 
 ---
 
 ## 3) JavaScript (script.js)
 
-O arquivo conta com seções organizadas e comentadas para:
+Arquivo com estrutura comentada para implementação futura:
 
 - Sistema do carrinho  
 - Filtros de produtos  
-- Página de produto individual  
+- Tamanho do produto  
 - Validações de login e cadastro  
 - Eventos gerais  
-- Funções a serem implementadas  
 
-A lógica ainda não está implementada — ficará a cargo do colega responsável pelo JS.
+A lógica será implementada posteriormente pelo responsável pelo JS.
 
 ---
 
@@ -73,96 +68,77 @@ A lógica ainda não está implementada — ficará a cargo do colega responsáv
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Bootstrap 5 (CDN)**  
-Usado para layout e offcanvas do carrinho  
+- **Bootstrap 5 (CDN)** – Offcanvas, layout, responsividade
 
-Nenhuma instalação adicional é necessária, basta abrir os arquivos no navegador.
+Nenhuma instalação é necessária. Apenas abra os arquivos `.html` no navegador.
 
 ---
 
 # 📌 Funcionamento Geral das Páginas
 
-### **index.html (Home)**
+### 🏠 index.html (Home)
 - Botões de categorias  
-- Lista de produtos em destaque  
-- Cada produto leva até **produto.html**
+- Produtos em destaque  
+- Acesso rápido ao produto individual  
 
----
+### 🛒 produtos.html
+- Grade de produtos  
+- Filtros laterais  
+- Botão “Ver Produto”  
 
-### **produtos.html**
-- Grade com vários produtos  
-- Botões "Ver Produto" abrem a página do produto individual  
+### 👕 produto.html
+- Imagem grande  
+- Nome, preço, tamanhos e avaliação  
+- Botão adicionar ao carrinho  
 
----
+### ⭐ feedbacks.html
+- Cards com avaliações reais  
 
-### **produto.html**
-- Imagem grande do produto  
-- Nome, preço, avaliação e tamanhos  
-- Botão "Adicionar ao Carrinho"  
-(To-do: implementar no JS)
-
----
-
-### **feedbacks.html**
-- Cards com feedbacks reais  
-- Layout igual ao wireframe
-
----
-
-### **login.html**
+### 🔐 login.html
 - Formulário de login  
 - Link para cadastro  
 
----
-
-### **cadastro.html**
+### 📝 cadastro.html
 - Formulário de criação de conta  
 
 ---
 
 # 🧺 Carrinho (Offcanvas)
 
-Funciona usando o componente padrão do Bootstrap.  
-Atualmente está vazio e espera implementação do JS:
+Construído com Bootstrap 5.  
+O JS será responsável por:
 
 - Adicionar itens  
 - Remover itens  
-- Atualizar total  
-
-Tudo já estruturado no arquivo **script.js**.
+- Atualizar o total  
+- Renderizar no offcanvas  
 
 ---
 
-# 🚀 Próximos passos (tarefas para cada membro)
+# 🚀 Próximos Passos
 
-### **Responsável por CSS**
-- Adicionar cores, margens, fontes e estilo geral  
-- Manter padrão preto & branco do wireframe  
-- Deixar tudo responsivo
+### 🎨 Responsável por CSS
+- Aplicar estilos  
+- Ajustar responsividade  
+- Seguir a identidade preto & branco
 
-### **Responsável por JS**
-- Implementar sistema de carrinho  
-- Filtro de produtos  
-- Lógica de seleção de tamanhos  
-- Validações de formulários  
-- Conectar produtos estáticos com comportamento real
+### ⚙️ Responsável por JS
+- Implementar a lógica do carrinho  
+- Ativar filtros  
+- Validar formulários  
 
-### **Responsável por HTML**
-- Conferir links entre páginas  
-- Ajustar nomes  
-- Inserir imagens quando forem fornecidas  
-- Testar visual geral  
+### 🧩 Responsável por HTML
+- Testar páginas  
+- Checar links  
+- Inserir imagens quando disponíveis  
 
 ---
 
 # 📞 Dúvidas do Grupo?
 
-Qualquer alteração ou parte nova pode ser feita sem prejudicar a estrutura, pois:
+Qualquer alteração pode ser feita sem prejudicar o projeto, pois:
 
-✔ O código está comentado  
-✔ Classes estão em português  
-✔ Todos os arquivos estão organizados  
-
-
-
-
+✔ Código comentado  
+✔ Estrutura organizada  
+✔ Arquivos independentes  
+✔ Tudo preparado para colaboração
