@@ -16,7 +16,6 @@ Criar um site para a Outlet, contendo:
 
 O layout segue o estilo preto e branco, com foco em organização, simplicidade e clareza.
 
----
 
 # 🧱 Estrutura do Código
 
@@ -163,6 +162,7 @@ Qualquer alteração ou parte nova pode ser feita sem prejudicar a estrutura, po
 ✔ O código está comentado  
 ✔ Classes estão em português  
 ✔ Todos os arquivos estão organizados  
+
 
 
 
